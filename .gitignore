@@ -1,0 +1,11 @@
+/.vs/BookShop/v16
+/BookShop/bin/Debug/net5.0
+/BookShop/obj
+/BookShopMigrations/bin/Debug/net5.0
+/BookShopMigrations/obj
+/Core/bin/Debug/net5.0
+/Core/obj
+/DatabaseProvider/obj/Debug/net5.0/ref
+/DatabaseProvider/obj/Debug/net5.0
+/DatabaseProvider/bin/Debug/net5.0
+/DatabaseProvider/obj
