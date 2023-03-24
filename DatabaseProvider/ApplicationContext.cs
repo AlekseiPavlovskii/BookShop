@@ -7,6 +7,10 @@ namespace DatabaseProvider
     {
         private readonly string _connectionString;
 
+        public ApplicationContext(DbContextOptions<ApplicationContext> options)
+            : base(options)
+        { }
+
         public ApplicationContext(string connectionString)
         {
             _connectionString = connectionString;
@@ -20,6 +24,10 @@ namespace DatabaseProvider
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (_connectionString == null)
+            {
+                return;
+            }
             optionsBuilder.UseSqlServer(_connectionString);
         }
     }

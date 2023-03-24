@@ -10,6 +10,7 @@ namespace DatabaseProvider.Configurations
         {
             builder.ToTable("Author").HasKey(a => a.Id);
             builder.Property(a => a.Name).IsRequired().HasMaxLength(50);
+            builder.Property(a => a.Surname).HasMaxLength(50);
         }
     }
 }
